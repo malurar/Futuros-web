@@ -1,7 +1,19 @@
 /* Navbar  */
 
+.offcanvas { 
+	color:black
+	font-family: "Roboto";
+	}
+
+	.nav-link {
+		color: black;
+		font-family: "Roboto";
+		font-weight: 500;
+	}
+
+
 .offcanvas-body {
-    color: black !important;
+    color: black ;
     background-color: #fafafa;
     border-radius: 25px;
     font-family: "Roboto";
@@ -9,9 +21,27 @@
 
 }
 
-.navlink {
-color:black
+@media (max-width: 991px) {
+  .offcanvas { 
+		color: white ;
+    background-color: #fafafa56;
+        font-family: "Roboto";
+    justify-content: center;
+    backdrop-filter: blur(10px);
+  }
+	.offcanvas-body {
+		background-color:transparent;
+		color:white !important;
+		font-family: "Roboto";
+	}
+	.nav-link {
+		color: rgb(255, 255, 255);
+		font-family: "Roboto";
+		font-weight: 300;
+	}
 }
+
+
 
 .navbar-brand{
 color: chartreuse;
