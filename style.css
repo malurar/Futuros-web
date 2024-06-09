@@ -48,6 +48,10 @@ min-height: 500px;
 
 }
 
+section:not(#Inicio) {
+	display: none;
+}
+
 h1 {
 
 	font-size: 70px;
