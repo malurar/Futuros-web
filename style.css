@@ -21,7 +21,7 @@ flex: auto;
 		color: black;
 		font-family: "Roboto";
 		font-weight: 500;
-		font-size: 25px;
+		font-size: 15px;
 
 	
 		}
@@ -51,22 +51,25 @@ section:not(#Inicio) {
 	display: none;
 }
 
-h1 {
+.Inicio h1 {
 
-	font-size: 70px;
+	font-size: 50px;
 	font-family: "roboto";
 	font-weight: 300;
 	color: #fafafa;
 	flex-wrap: wrap;
+	padding-left: 200px;
 	
 
 }
 
-h2 {
-	font-size: 30px;
+.Inicio h2 {
+	font-size: 20px;
 	font-family: "roboto";
 	font-weight: 400;
 	color: #fafafa;
+	padding-right: 200px;
+	
 
 	flex-wrap: wrap;
 
