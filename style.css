@@ -1,5 +1,4 @@
 
-
 /* Fondo de secciones */
 
 
@@ -20,6 +19,7 @@
 /* Navbar  */
 
 .navbar-brand {
+	font-size: 50px;
 font-family: "Roboto";
 font-weight: 300;
 color: chartreuse;
@@ -40,11 +40,19 @@ flex: auto;
 	.nav-link {
 		color: black;
 		font-family: "Roboto";
-		font-weight: 500;
-		font-size: 15px;
+		font-weight: 400;
+		font-size: 20px;
 
 	
 		}
+
+.nav-link:hover {
+	color: #00ff0d;
+}
+
+.nav-link.active{
+color: #00ff0d !important;
+}
 
 
 .offcanvas-body {
@@ -138,10 +146,7 @@ max-width: 100%;
 	margin-top: 0%;
 }
 
-#Materia .columna1 {
-padding-left: 50px;
 
-}
 
 #Materia .columna2 {
 justify-content: end;
@@ -161,7 +166,10 @@ font-size: large;
 
 }
 
-
+#Materia .seccion-texto {
+	font-size: 16px;
+	max-width: fit-content;
+}
 
 #Materia .docente-info {
     text-align: left;
@@ -214,56 +222,51 @@ margin-top: 20px;
 
 /* Sección Trabajos */
 
-
-/* Ajustes para el carrusel dentro de la sección Trabajos */
-#Trabajos .carousel-inner {
-    width: 100%;
-    height: 100%;
-}
-
-#Trabajos .carousel-item {
-    height: 70vh; /* Ajusta la altura como desees */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ .video-container {
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%; /* Proporción 16:9 para videos */
+	max-width: 70%; /* Ajusta el tamaño del contenedor del video */
+	margin: auto; /* Centra el contenedor */
 	margin-bottom: 50px;
-}
+  }
+  .video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+  }
 
-#Trabajos .video-iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-	
-}
+  /* Posiciona las flechas fuera del marco del carrusel */
+  .carousel-control-prev,
+  .carousel-control-next {
+	width: 5%; /* Ajusta el ancho del área de control según sea necesario */
+	color: #00ff0d;
+  }
 
-/* Posiciona las flechas fuera del marco del carrusel */
-#Trabajos .carousel-control-prev,
-#Trabajos .carousel-control-next {
-    width: 5%; /* Ajusta el ancho del área de control según sea necesario */
+  .carousel-control-prev {
+	left: 8%; /* Mueve la flecha izquierda fuera del marco */
+  }
 
-}
+  .carousel-control-next {
+	right: 8%; /* Mueve la flecha derecha fuera del marco */
+  }
 
-#Trabajos .carousel-control-prev {
-    left: -10%; /* Mueve la flecha izquierda fuera del marco */
-}
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+	font-size: 4rem; /* Ajusta el tamaño de las flechas */
+	width: 50px; /* Ajusta el ancho de las flechas */
+	height: 50px; /* Ajusta la altura de las flechas */
+	background-size: 100%, 100%; /* Asegura que las flechas ocupen todo el área */
+  }
 
-#Trabajos .carousel-control-next {
-    right: -10%; /* Mueve la flecha derecha fuera del marco */
-}
-
-#Trabajos .carousel-control-prev-icon,
-#Trabajos .carousel-control-next-icon {
-    font-size: 4rem; /* Ajusta el tamaño de las flechas */
-    width: 50px; /* Ajusta el ancho de las flechas */
-    height: 50px; /* Ajusta la altura de las flechas */
-    background-size: 100%, 100%; /* Asegura que las flechas ocupen todo el área */
-}
-
-/* Opcional: Cambiar el color de las flechas */
-#Trabajos .carousel-control-prev-icon,
-#Trabajos .carousel-control-next-icon {
-    border-radius: 50%; /* Haz las flechas circulares */
-}
+  /* Opcional: Cambiar el color de las flechas */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+	border-radius: 50%; /* Haz las flechas circulares */
+  }
 
 
 
@@ -272,7 +275,7 @@ margin-top: 20px;
 
 @media (max-width: 991px) {
 
-
+	
 
 
 	/*Landing page */
@@ -360,6 +363,8 @@ margin-top: 20px;
 	.navbar-brand {
 		padding-top: 0px;
 		padding-right: 0px;
+		font-size: 1.5rem;
+	
 	}
 
   .offcanvas { 
