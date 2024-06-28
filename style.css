@@ -1,3 +1,22 @@
+
+
+/* Fondo de secciones */
+
+
+
+.bg-gradient {
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+
+
 /* Navbar  */
 
 .navbar-brand {
@@ -52,6 +71,8 @@ section:not(#Inicio) {
 	display: none;
 }
 
+/* Landing page  */
+
 .Inicio h1 {
 
 	font-size: 50px;
@@ -89,6 +110,8 @@ max-width: 1000px;
 
 }
 
+/* Materia  */
+
 #Materia {
 	color: #fafafa;
 	font-size: small;
@@ -101,28 +124,23 @@ font-weight: 300;
 color: #fafafa;
 align-items: center;
 justify-content: stretch;
+max-width: 100%;
+
+
 }
 
-.bg-gradient {
-	background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border:1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-	margin-top: 20px;
-	margin-bottom: 50px;
-}
-
-
-
-/* Asegurarse de que las columnas se comporten correctamente */
 #Materia .row {
     width: 100%;
 }
 
 #Materia .columna1, #Materia .columna2 {
     padding: 30px;
+	margin-top: 0%;
+}
+
+#Materia .columna1 {
+padding-left: 50px;
+
 }
 
 #Materia .columna2 {
@@ -134,10 +152,38 @@ justify-content: end;
     max-width: 100%;
     height: 80px;
     border-radius: 0.5rem; 
-	
-
+	margin-bottom: 10px;
 	
 }
+
+#Materia .Equipo-docente {
+font-size: large;
+
+}
+
+
+
+#Materia .docente-info {
+    text-align: left;
+    margin-top: 0px;
+	color: #fafafa;
+}
+
+#Materia .docente-name {
+    font-weight: bold;
+	margin-bottom: 0%;
+	color: #fafafa;
+
+}
+
+#Materia .project-presentacion {
+    font-style: italic;
+    color: #fafafa;
+	margin-top: 0%;
+}
+
+
+/* Sección Investigacion */
 
 #Investigacion .seccion-titulo {
 color: #fafafa;
@@ -163,6 +209,11 @@ margin-top: 20px;
     font-style: italic;
     color: #fafafa;
 }
+
+
+
+/* Sección Trabajos */
+
 
 /* Ajustes para el carrusel dentro de la sección Trabajos */
 #Trabajos .carousel-inner {
@@ -217,9 +268,14 @@ margin-top: 20px;
 
 
 
-
+/* Version mobile */
 
 @media (max-width: 991px) {
+
+
+
+
+	/*Landing page */
 
 	#Inicio .container {
         display: flex;
@@ -260,6 +316,9 @@ margin-top: 20px;
 		padding: 0%;
     }
 
+
+		/* Mobile seccion investigacion */
+
 	.project-info {
 		text-align: center;
 		margin-top: 10px;
@@ -282,12 +341,20 @@ margin-top: 20px;
 	align-items: center;
 	flex: auto;
 	justify-content: center;
+	padding: 0px;
 }
 
 #Investigacion .seccion-titulo {
 	font-size: 28px;
 	text-align: center;
 }
+
+#Investigacion {
+	flex: none;
+	flex-wrap: nowrap;
+}
+
+/* Mobile navbar*/
 
 
 	.navbar-brand {
@@ -316,7 +383,7 @@ margin-top: 20px;
 
 	h1 {
 
-		font-size: 40px;
+		font-size: 0.5rem;
 		font-family: "roboto";
 		font-weight: 400;
 		color: #fafafa;
@@ -328,7 +395,7 @@ margin-top: 20px;
 	}
 	
 	h2 {
-		font-size: 20px;
+		font-size: 0.3rem;
 		font-family: "roboto";
 		font-weight: 400;
 		color: #fafafa;
@@ -339,11 +406,15 @@ margin-top: 20px;
 	
 	
 	}
+
+	body {
+		font-size: 1rem;
+	}
 	
 }
 
 
-
+/* Fin Version mobile */
 
 
 
@@ -352,6 +423,11 @@ body {
 background-color: black;
 font-family: "Roboto";
 }
+
+
+
+/* Fondo de video */
+
 
 
 #video-background {
