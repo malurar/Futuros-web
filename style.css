@@ -222,22 +222,29 @@ margin-top: 20px;
 
 /* Sección Trabajos */
 
- .video-container {
-	position: relative;
-	width: 100%;
-	padding-top: 56.25%; /* Proporción 16:9 para videos */
-	max-width: 70%; /* Ajusta el tamaño del contenedor del video */
-	margin: auto; /* Centra el contenedor */
+
+#Trabajos .seccion-titulo {
+	color: #fafafa;
+	text-align: center !important; 
+	font-weight: 300;
+	font-size: 30px;
+	margin-top: 20px;
+	
+	}
+
+
+
+ .carousel-inner {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+    align-content: center;
+    align-items: center;
 	margin-bottom: 50px;
-  }
-  .video-container iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	border: 0;
-  }
+ }
 
   /* Posiciona las flechas fuera del marco del carrusel */
   .carousel-control-prev,
@@ -247,11 +254,11 @@ margin-top: 20px;
   }
 
   .carousel-control-prev {
-	left: 8%; /* Mueve la flecha izquierda fuera del marco */
+	left: 20%; /* Mueve la flecha izquierda fuera del marco */
   }
 
   .carousel-control-next {
-	right: 8%; /* Mueve la flecha derecha fuera del marco */
+	right: 20%; /* Mueve la flecha derecha fuera del marco */
   }
 
   .carousel-control-prev-icon,
@@ -278,7 +285,7 @@ margin-top: 20px;
 	
 
 
-	/*Landing page */
+	/* mobile Landing page */
 
 	#Inicio .container {
         display: flex;
@@ -320,6 +327,31 @@ margin-top: 20px;
     }
 
 
+/*  mobile Seccion Materia */
+
+
+#Materia {
+	text-align: center;
+}
+
+#Materia .seccion-texto {
+	font-size: 1rem;
+	max-width: fit-content;
+	margin-bottom: 0px;
+}
+
+#Materia .seccion-titulo {
+ font-size: 1.2rem;
+ margin-bottom: 0px;
+
+}
+
+#Materia .docente-info {
+text-align: center;
+
+}
+
+
 		/* Mobile seccion investigacion */
 
 	.project-info {
@@ -345,6 +377,7 @@ margin-top: 20px;
 	flex: auto;
 	justify-content: center;
 	padding: 0px;
+	margin: 0;
 }
 
 #Investigacion .seccion-titulo {
@@ -352,9 +385,9 @@ margin-top: 20px;
 	text-align: center;
 }
 
-#Investigacion {
-	flex: none;
-	flex-wrap: nowrap;
+
+.row.investigacion {
+	flex-direction: column;
 }
 
 /* Mobile navbar*/
@@ -363,7 +396,7 @@ margin-top: 20px;
 	.navbar-brand {
 		padding-top: 0px;
 		padding-right: 0px;
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 	
 	}
 
@@ -417,6 +450,12 @@ margin-top: 20px;
 	}
 	
 }
+
+
+
+
+
+
 
 
 /* Fin Version mobile */
